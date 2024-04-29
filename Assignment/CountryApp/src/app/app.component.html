@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Country list</h1>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let country of countries">
+      <div class="card border border-dark mb-3">
+        <img [src]="country.flags.png" class="card-img-top" alt="Flag">
+        <div class="card-body">
+          <h5 class="card-title">{{ country.name.common }}</h5>
+          <p class="card-text">Capital: {{ country.capital }}</p>
+          <p class="card-text">Region: {{ country.region }}</p>
+          <p class="card-text">Population: {{ country.population }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
